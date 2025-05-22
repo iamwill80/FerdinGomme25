@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>25 Anni con FerDin Gomme</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1em;
+      text-align: center;
+    }
+    .frase {
+      font-size: 1.8em;
+      color: #333;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="frase" id="frase"></div>
+
+  <script>
+    const frasi = ['25 anni su strada con voi!', 'Gomme, passione e sicurezza dal 1999.', 'FerDin Gomme: il tuo gommista di fiducia da 25 anni.', 'Ogni chilometro conta, ogni cliente anche.', '25 anni di equilibrio perfetto.', 'Fermarsi da noi è sempre una buona idea.', 'Dal battistrada al cuore.', 'Guidiamo con te da 25 anni.', 'Dove c’è strada, c’è FerDin Gomme.', '25 anni a gonfie gomme!', 'Rotoliamo con te dal 1999.', '25 candeline... e 4 gomme sempre nuove!', 'La tua fiducia è il nostro miglior pneumatico.', 'Il nostro lavoro? Farti strada.', 'Strada facendo abbiamo fatto la differenza.', 'Non cambiamo solo gomme: miglioriamo viaggi.', 'FerDin Gomme: dove ogni rotazione è un passo avanti.', '25 anni senza perdere l’equilibrio!', 'Festeggiamo insieme ogni chilometro percorso.', 'Dal primo cliente all’ultimo sorriso, grazie!'];
+    const scelta = frasi[Math.floor(Math.random() * frasi.length)];
+    document.getElementById("frase").innerText = scelta;
+  </script>
+</body>
+</html>
