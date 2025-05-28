@@ -3,33 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>25 Anni con FerDin Gomme</title>
+  <title>🎉 25 Anni con FerDin Gomme 🎉</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      padding: 1em;
-      text-align: center;
-    }
-    .frase {
-      font-size: 1.8em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fdfdfd, #f2f2f2);
       color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #b22222;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 1.3em;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .frase {
+      background-color: #fff4e6;
+      color: #b25c00;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 1.5em;
       max-width: 700px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    img {
+      margin-bottom: 40px;
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <div class="frase" id="frase"></div>
+  <h1>🎉 25 Anni con FerDin Gomme! 🎉</h1>
+  
+  <h2>Dal Maggio 2000, tra pneumatici e sfottò Roma-Juve!</h2> 
+
+  <img src="https://cdn-prod-eu.yepgarage.info/upload/ferdingomme/carousels/651fc3700f7956759501bc01/bannerhome-mobile-mobile.jpg?411261558" alt="Ferdin Gomme" />
+
+	<div class="frase" id="frase"></div>
+
 
   <script>
-    const frasi = ['25 anni su strada con voi!', 'Gomme, passione e sicurezza dal 1999.', 'FerDin Gomme: il tuo gommista di fiducia da 25 anni.', 'Ogni chilometro conta, ogni cliente anche.', '25 anni di equilibrio perfetto.', 'Fermarsi da noi è sempre una buona idea.', 'Dal battistrada al cuore.', 'Guidiamo con te da 25 anni.', 'Dove c’è strada, c’è FerDin Gomme.', '25 anni a gonfie gomme!', 'Rotoliamo con te dal 1999.', '25 candeline... e 4 gomme sempre nuove!', 'La tua fiducia è il nostro miglior pneumatico.', 'Il nostro lavoro? Farti strada.', 'Strada facendo abbiamo fatto la differenza.', 'Non cambiamo solo gomme: miglioriamo viaggi.', 'FerDin Gomme: dove ogni rotazione è un passo avanti.', '25 anni senza perdere l’equilibrio!', 'Festeggiamo insieme ogni chilometro percorso.', 'Dal primo cliente all’ultimo sorriso, grazie!'];
-    const scelta = frasi[Math.floor(Math.random() * frasi.length)];
-    document.getElementById("frase").innerText = scelta;
+    const frasi = ['25 anni su strada con voi!', 'Gomme, passione e sicurezza dal 2000.', 'FerDin Gomme: il tuo gommista di fiducia da 25 anni.', 'Ogni chilometro conta, ogni cliente anche.', '25 anni di equilibrio perfetto.', 'Fermarsi da noi è sempre una buona idea.', 'Dal battistrada al cuore.', 'Guidiamo con te da 25 anni.', 'Dove c’è strada, c’è FerDin Gomme.', '25 anni a gonfie gomme!', 'Rotoliamo con te dal 2000.', '25 candeline... e 4 gomme sempre nuove!', 'La tua fiducia è il nostro miglior pneumatico.', 'Il nostro lavoro? Farti strada.', 'Strada facendo abbiamo fatto la differenza.', 'Non cambiamo solo gomme: miglioriamo viaggi.', 'FerDin Gomme: dove ogni rotazione è un passo avanti.', '25 anni senza perdere l’equilibrio!', 'Festeggiamo insieme ogni chilometro percorso.', 'Dal primo cliente all’ultimo sorriso, grazie!',
+
+    ];
+
+    const fraseCasuale = frasi[Math.floor(Math.random() * frasi.length)];
+    document.getElementById("frase").innerText = fraseCasuale;
   </script>
 </body>
 </html>
